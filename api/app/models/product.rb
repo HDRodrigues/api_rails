@@ -6,5 +6,7 @@ class Product < ActiveRecord::Base
 		presence: true,
 		:numericality  => { :greater_than => 0 }
 		
-	has_many :product
+	belongs_to :category 
+	validates :category,
+		presence: true
 end
