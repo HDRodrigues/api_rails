@@ -4,7 +4,7 @@ class Product < ActiveRecord::Base
 		length: { in: 1.. 20 }
 	validates :price,
 		presence: true,
-		numericality => {:greater_than => 0}
+		:numericality  => { :greater_than => 0 }
 		
 	has_many :product
 end
