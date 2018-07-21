@@ -2,7 +2,7 @@ class CreateProducts < ActiveRecord::Migration
   def change
     create_table :products do |t|
       t.string :name
-      t.number :price
+      t.decimal :price
 
       t.timestamps null: false
     end
