@@ -36,6 +36,7 @@ end
 
 puts "Produtos cadastrados com sucesso!"
 
+#Usuario como seed somente para testes
 
 puts "Cadastrando o USUARIO PADRÃO..."
 
