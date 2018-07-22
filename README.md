@@ -1,6 +1,6 @@
 # Api_rails
 API using ruby on rails with educational purpose.
-The API use the concepts like:
+The API uses the concepts like:
  * Authentication using Auth
  * Nested Routes
  * Validations 
