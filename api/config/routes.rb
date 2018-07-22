@@ -1,8 +1,13 @@
 Rails.application.routes.draw do
  
 
-  resources :category , :defaults => { :format => :json }
-  resources :product, :defaults => { :format => :json }
+  # localhost:3000/api/product/
+  namespace :api  do
+    resources :category , :defaults => { :format => :json }
+    resources :product, :defaults => { :format => :json }  
+  end
+
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
