@@ -56,6 +56,8 @@ GEM
       rails (< 6)
     dotenv (0.7.0)
     erubis (2.7.0)
+    faker (1.8.7)
+      i18n (>= 0.7)
     foreman (0.64.0)
       dotenv (~> 0.7.0)
       thor (>= 0.13.6)
@@ -143,6 +145,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   devise_token_auth
+  faker
   foreman
   jbuilder (~> 2.0)
   rack-cors
@@ -153,4 +156,4 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-   1.16.2
+   1.16.3
