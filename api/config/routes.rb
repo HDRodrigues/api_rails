@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   # localhost:3000/api/product/
   namespace :api  do
+    mount_devise_token_auth_for 'User', at: 'auth'
     resources :category , :defaults => { :format => :json }
     resources :product, :defaults => { :format => :json }  
   end
