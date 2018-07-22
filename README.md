@@ -5,3 +5,4 @@ The API uses the concepts like:
  * Nested Routes
  * Validations 
  * Namespace to get a separate version of the api
+ * Rake files to populate de data-base
