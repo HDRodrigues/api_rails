@@ -1,5 +1,5 @@
-class CategoryController < ApplicationController
-	skip_before_action :verify_authenticity_token, only: [:create,:destroy]
+class Api::CategoryController < Api::BaseController
+	#skip_before_action :verify_authenticity_token, only: [:create,:destroy]
 
 	def index
 		@categories = Category.all

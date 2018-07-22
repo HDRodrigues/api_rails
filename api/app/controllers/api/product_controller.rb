@@ -1,6 +1,6 @@
-class ProductController < ApplicationController
-	protect_from_forgery with: :null_session
-	skip_before_action :verify_authenticity_token, only: [:create]
+class Api::ProductController < Api::BaseController
+	#protect_from_forgery with: :null_session
+	#skip_before_action :verify_authenticity_token, only: [:create]
 
 	def index
 		@products = Product.all
