@@ -9,4 +9,18 @@ namespace :dev do
 		puts "Setup executado com sucesso!"
 	end
 
+
+	desc "Cria Membros Fake"
+  	task generate_users: :environment do 
+      puts "Cadastrando Usuarios ..."
+      100.times do
+        User.create!(
+          email: Faker::Internet.email,
+          password: "123456",
+          password_confirmation: "123456"
+        )
+      end
+      puts "Usuarios Cadastrados com sucesso..."
+  end
+
 end

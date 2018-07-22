@@ -35,3 +35,15 @@ puts "Cadastrando Produtos"
 end
 
 puts "Produtos cadastrados com sucesso!"
+
+
+puts "Cadastrando o USUARIO PADRÃO..."
+
+	User.create!(
+		email: "admin@admin.com",
+		name: "Administrador", 
+		password: "12345678", 
+		password_confirmation: "12345678"
+	)
+
+puts "USUARIO PADRÃO cadastrado com sucesso!"
